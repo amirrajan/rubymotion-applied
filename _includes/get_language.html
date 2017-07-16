@@ -1,0 +1,12 @@
+{% assign url_splited = page.url | split: '/' %}
+{% assign language_code = url_splited[1] %}
+{% case language_code %}
+{% when "cn" %}
+  {% assign language = "cn" %}
+{% when "jp" %}
+  {% assign language = "jp" %}
+{% when "fr" %}
+  {% assign language = "fr" %}
+{% else %}
+  {% assign language = "en" %}
+{% endcase %}

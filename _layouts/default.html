@@ -1,0 +1,37 @@
+{% include get_language.html %}
+<!DOCTYPE html>
+{% if page.need_xhtml %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% else %}
+<html>
+{% endif %}
+  <head>
+    {% include head.html %}
+  </head>
+  <body data-section="{{ page.section }}"{% if page.body_class %} class="{{ page.body_class }}"{% endif %} data-lang="{{ language }}">
+
+    <div class="container">
+
+      {% include header.html %}
+
+      <section class="main">
+      {% if page.heading_style != "custom" %}
+        {% if page.heading_style %}
+        <header class="heading header_{{ page.heading_style }}">
+        {% else %}
+        <header class="heading header_default">
+        {% endif %}
+          <span class="v_aligner resp_m_none" aria-hidden="true"></span><div class="heading_content txt_centered">
+            <h1>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}</h1>
+            {% if page.heading_baseline %}<p>{{ page.heading_baseline }}</p>{% endif %}
+          </div>
+          {% if page.heading_bg %}<img src="{{ page.heading_bg }}" class="heading_bg" alt="" />{% endif %}
+        </header>
+      {% endif %}
+	<div class="rubymotion-applied-content">
+        {{ content }}
+	</div>
+      </section>
+    </div>
+  </body>
+</html>

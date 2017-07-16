@@ -1,0 +1,39 @@
+.heading p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.rubymotion-applied-content {
+    padding: 10px;
+    font-size: 20px;
+    color: #111;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+.rubymotion-applied-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.rubymotion-applied-content h2 {
+    font-size: 25px;
+}
+
+.rubymotion-applied-content h3 {
+    font-size: 20px;
+}
+
+.rubymotion-applied-content {
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 920px;
+}
+
+.rubymotion-applied-content ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}

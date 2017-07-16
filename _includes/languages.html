@@ -1,0 +1,7 @@
+<a href="{{ page.url | remove_first:'/cn' | remove_first:'/jp' | remove_first:'/fr'}}?no_redirect=1">English</a>
+—
+<a href="{{ page.url | remove_first:'/cn' | remove_first:'/jp' | remove_first:'/fr' | prepend:'/fr'}}">Français</a>
+-
+<a href="{{ page.url | remove_first:'/cn' | remove_first:'/jp' | remove_first:'/fr' | prepend:'/cn'}}">简体中文</a>
+—
+<a href="{{ page.url | remove_first:'/cn' | remove_first:'/jp' | remove_first:'/fr' | prepend:'/jp'}}">日本語</a>

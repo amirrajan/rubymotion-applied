@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'compass'
+gem 'jekyll'
+gem 'rouge', '1.6.2'
+gem 'nokogiri'
+gem 'RedCloth'
+gem 'pygments.rb'
+gem 'asciidoctor'
+gem 'animation', '~> 0.1.alpha.3'
