@@ -22,6 +22,8 @@ via GitHub Issues.
    1. Game Development: iPhone, iPad, Android, and Cross Platform
    1. The RubyMotion Runtime itself
 4. Tutorials target the lastest stable iOS/Android releases (unless stated otherwise).
+5. The [WNDX School](https://wndx.school) (paid) has some more in-depth video courses. Courses in beta are currently free.
+   1. [Introduction to iPhone Development with RubyMotion](https://wndx.school/p/introduction-to-iphone-development-with-rubymotion)
 
 # Jump To Tutorial #
 
