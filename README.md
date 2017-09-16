@@ -8,3 +8,5 @@ at [http://rubymotion.com/applied](http://rubymotion.com/applied).
 >open http://localhost:4000
 >bundle exec jekyll serve --watch
 ```
+
+Then Reload http://localhost:4000.
