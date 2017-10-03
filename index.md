@@ -5,7 +5,7 @@ heading_baseline: An example/tutorial based approach to learning mobile developm
 ---
 
 This page contains documentation that will help you get started with
-build mobile apps using Ruby. Content on this page is released under
+building mobile apps using Ruby. Content on this page is released under
 Apache 2.0 and can be found [here](http://github.com/amirrajan/rubymotion-applied).
 Feel free to contribute your own documentation or provide suggestions
 via GitHub Issues.
@@ -21,7 +21,7 @@ via GitHub Issues.
    1. Non-mobile Development: MacOS, tvOS, WatchOS (requires at least a RubyMotion Indie License)
    1. Game Development: iPhone, iPad, Android, and Cross Platform
    1. The RubyMotion Runtime itself
-4. Tutorials target the lastest stable iOS/Android releases (unless stated otherwise).
+4. Tutorials target the latest stable iOS/Android releases (unless stated otherwise).
 5. The [WNDX School](https://wndx.school) (paid) has some more in-depth video courses. Courses in beta are currently free.
    1. [Introduction to iPhone Development with RubyMotion](https://wndx.school/p/introduction-to-iphone-development-with-rubymotion)
 
@@ -30,12 +30,12 @@ via GitHub Issues.
 ## iPhone/iPad Development Tutorials ##
 
 1. [Getting Your Mac Set Up for iOS Development](#tutorial1)
-1. [Wrapping a Reponsive Website and Deploying to the AppStore](#todo)
+1. [Wrapping a Responsive Website and Deploying to the AppStore](#todo)
 1. [Adding a `UIButton` programmatically and wiring it up to do something when tapped](#todo)
 1. [Working with the `UINavigationController`](#todo)
 1. [Working with the `UITableViewController`](#todo)
 1. [Building Layouts using Masonry](#todo)
-1. [Interacting JSON APIs AFNetworking](#todo)
+1. [Interacting with JSON APIs AFNetworking](#todo)
 1. [Working with Isolated Storage](#todo)
 1. [IAP/Monetization](#todo)
 1. [Push Notifications](#todo)
