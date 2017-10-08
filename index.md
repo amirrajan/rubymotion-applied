@@ -81,24 +81,86 @@ TODO
 
 ## Installing Homebrew ##
 
-TODO
+Paste this at a terminal prompt
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+[Source](https://brew.sh/)
 
-## Installing rbenv ##
+## Installing rbenv or rvm ##
 
-TODO
+### rvm
+
+Paste this at a terminal prompt
+
+
+```
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+```
 
 ## Installing Xcode and CLI Tools to Support Mobile Development ##
 
-TODO
+Install Xcode, launch it, and click 'yes' when asked if you want to install additional components
 
 ## Getting Your Certificates and Provisioning Profiles Setup ##
 
-TODO
+Use [motion-provisioning](https://github.com/HipByte/motion-provisioning)
+Add this line to your application's Gemfile:
+
+
+~~~
+gem 'motion-provisioning'
+~~~
+
+and then add the info from the motion-provisioning README to your rakefile:
+
+
+~~~
+Motion::Project::App.setup do |app|
+  app.name = 'My App'
+  app.identifier = 'com.example.myapp'
+
+  app.development do
+    app.codesign_certificate = MotionProvisioning.certificate(
+      type: :development,
+      platform: :ios)
+
+    app.provisioning_profile = MotionProvisioning.profile(
+      bundle_identifier: app.identifier,
+      app_name: app.name,
+      platform: :ios,
+      type: :development)
+  end
+
+  app.release do
+    app.codesign_certificate = MotionProvisioning.certificate(
+      type: :distribution,
+      platform: :ios)
+
+    app.provisioning_profile = MotionProvisioning.profile(
+      bundle_identifier: app.identifier,
+      app_name: app.name,
+      platform: :ios,
+      type: :distribution)
+  end
+end
+~~~
 
 ## Running Hello World on the Simulator ##
 
-TODO
+
+~~~
+motion create hello_world --template=iOS
+cd hello_world
+bundle install
+rake pod:install #optional--only if you add pods to your Rakefile
+rake device_name='iPhone 8'
+~~~
+
 
 ## Running Hello World on a Device ##
 
-TODO
+~~~
+cd hello_world
+rake device
+~~~
