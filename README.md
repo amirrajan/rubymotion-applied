@@ -1,6 +1,5 @@
 Contribute RubyMotion documentation here, this is the community driven
-part of RubyMotion documentation which can be found
-at [http://rubymotion.com/applied](http://rubymotion.com/applied).
+part of RubyMotion documentation which can be found and will be published to the main RubyMotion site piece meal.
 
 ```
 >gem install bundler
