@@ -21,3 +21,4 @@ Open source RubyMotion repoistories:
 - The repository for RubyMotion cli commands is [here](https://github.com/amirrajan/rubymotion-command).
 - The repository for RubyMotion SDK metadata generation is [here](https://github.com/amirrajan/rubymotion-bridgesupport).
 - The repository for RubyMotion metadata artifacts is [here](http://github.com/amirrajan/rubymotion-data).
+- The repository for RubyMotion build is [here](http://github.com/amirrajan/rubymotion-build).
