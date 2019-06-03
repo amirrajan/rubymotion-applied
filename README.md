@@ -17,8 +17,7 @@ Take a look at the [help wanted tag](https://github.com/amirrajan/rubymotion-app
 
 Open source RubyMotion repoistories:
 
-- The repository for RubyMotion templates is [here](https://github.com/amirrajan/rubymotion-templates).
+- The repository for RubyMotion templates/build automation is [here](https://github.com/amirrajan/rubymotion-templates).
 - The repository for RubyMotion cli commands is [here](https://github.com/amirrajan/rubymotion-command).
 - The repository for RubyMotion SDK metadata generation is [here](https://github.com/amirrajan/rubymotion-bridgesupport).
 - The repository for RubyMotion metadata artifacts is [here](http://github.com/amirrajan/rubymotion-data).
-- The repository for RubyMotion build is [here](http://github.com/amirrajan/rubymotion-build).
