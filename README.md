@@ -15,7 +15,7 @@ Then Reload http://localhost:4000.
 
 Take a look at the [help wanted tag](https://github.com/amirrajan/rubymotion-applied/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) for easy contributions. Anything substantial, and I'll happily set you up with a free Indie License to RubyMotion :-)
 
-Open source RubyMotion repoistories:
+Open source RubyMotion repositories:
 
 - The repository for RubyMotion templates/build automation is [here](https://github.com/amirrajan/rubymotion-templates).
 - The repository for RubyMotion cli commands is [here](https://github.com/amirrajan/rubymotion-command).
