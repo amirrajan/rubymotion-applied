@@ -31,7 +31,7 @@ via GitHub Issues.
 
 1. [Getting Your Mac Set Up for iOS Development](#tutorial1)
 1. [Wrapping a Responsive Website and Deploying to the AppStore](#todo)
-1. [Adding a `UIButton` programmatically and wiring it up to do something when tapped](#todo)
+1. [Adding a `UIButton` programmatically and wiring it up to do something when tapped](#tutorial3)
 1. [Working with the `UINavigationController`](#todo)
 1. [Working with the `UITableViewController`](#todo)
 1. [Building Layouts using Masonry](#todo)
@@ -165,3 +165,6 @@ rake device_name='iPhone 8'
 cd hello_world
 rake device
 ~~~
+
+<span id="tutorial3"></span>
+# Adding a `UIButton Programmatically, and wiring it up to do something when tapped #
