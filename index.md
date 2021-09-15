@@ -31,7 +31,7 @@ via GitHub Issues.
 
 1. [Getting Your Mac Set Up for iOS Development](#tutorial1)
 1. [Wrapping a Responsive Website and Deploying to the AppStore](#todo)
-1. [Adding a `UIButton` programmatically and wiring it up to do something when tapped](#todo)
+1. [Adding a `UIButton` programmatically and wiring it up to do something when tapped](#tutorial3)
 1. [Working with the `UINavigationController`](#todo)
 1. [Working with the `UITableViewController`](#todo)
 1. [Building Layouts using Masonry](#todo)
@@ -165,3 +165,41 @@ rake device_name='iPhone 8'
 cd hello_world
 rake device
 ~~~
+
+<span id="tutorial3"></span>
+# Adding a `UIButton` Programmatically, and wiring it up to do something when tapped #
+~~~
+  # viewDidLoad gets called once the view is loaded
+  def viewDidLoad
+    # call the super method
+    super
+
+    # we can change view properties
+    self.view.backgroundColor = UIColor.whiteColor
+
+    # Create a button
+    # from https://developer.apple.com/documentation/uikit/uibutton/1624028-buttonwithtype
+    button = UIButton.buttonWithType(UIButtonTypeSystem)
+    button.setTitle("I'm a button", forState:UIControlStateNormal)
+    button.sizeToFit
+    # This is an arbitrary placement
+    button.center = CGPointMake(180, 160)
+    # Buttons are views, have have the same properties
+    button.backgroundColor = UIColor.lightGrayColor
+
+    # This adds the functionality to the button.
+    # Note that the action selector is a string, terminating with a colon
+    button.addTarget(self,
+                     action: 'button_touched:',
+                     forControlEvents: UIControlEventTouchUpInside)
+
+    # Add the button to the view.
+    # Note that all UI elements are views, so your button is a subView
+    self.view.addSubview(button)
+  end
+
+  # This is an example of an action for a UI element
+  def button_touched(sender)
+    puts "Button was touched."
+  end
+  ~~~
