@@ -167,4 +167,39 @@ rake device
 ~~~
 
 <span id="tutorial3"></span>
-# Adding a `UIButton Programmatically, and wiring it up to do something when tapped #
+# Adding a `UIButton` Programmatically, and wiring it up to do something when tapped #
+~~~
+  # viewDidLoad gets called once the view is loaded
+  def viewDidLoad
+    # call the super method
+    super
+
+    # we can change view properties
+    self.view.backgroundColor = UIColor.whiteColor
+
+    # Create a button
+    # from https://developer.apple.com/documentation/uikit/uibutton/1624028-buttonwithtype
+    button = UIButton.buttonWithType(UIButtonTypeSystem)
+    button.setTitle("I'm a button", forState:UIControlStateNormal)
+    button.sizeToFit
+    # This is an arbitrary placement
+    button.center = CGPointMake(180, 160)
+    # Buttons are views, have have the same properties
+    button.backgroundColor = UIColor.lightGrayColor
+
+    # This adds the functionality to the button.
+    # Note that the action selector is a string, terminating with a colon
+    button.addTarget(self,
+                     action: 'button_touched:',
+                     forControlEvents: UIControlEventTouchUpInside)
+
+    # Add the button to the view.
+    # Note that all UI elements are views, so your button is a subView
+    self.view.addSubview(button)
+  end
+
+  # This is an example of an action for a UI element
+  def button_touched(sender)
+    puts "Button was touched."
+  end
+  ~~~
